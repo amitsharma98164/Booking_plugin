@@ -1,0 +1,109 @@
+/* Flatpickr calendar size adjustments */
+.flatpickr-calendar {
+    width: 25% !important;
+   /* Ensure it fits within the container */
+    max-width: none !important;
+   /* Override default max-width */
+    font-size: 16px;
+   /* Adjust font size for better visibility */
+    box-shadow: none !important;
+   /* Match containers shadow */
+    border-radius: 8px;
+}
+.flatpickr-month {
+    font-size: 18px;
+   /* Larger month name font */
+    color: #333;
+}
+.flatpickr-day {
+    height: 40px !important;
+    width: 40px !important;
+    line-height: 40px !important;
+    margin: 1px !important;
+   /* Add space between the dates */
+    border: 1px solid #ddd;
+   /* Light gray border */
+    border-radius: 4px;
+   /* Rounded corners */
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+   /* Ensure background is white */
+    box-sizing: border-box;
+   /* Ensure padding and borders are included in size */
+}
+.flatpickr-months {
+    padding: 20px 0;
+}
+span.flatpickr-next-month, span.flatpickr-prev-month{
+    padding: 30px 20px !important;
+}
+.flatpickr-day:hover {
+    background: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+/* Selected date */
+.flatpickr-day.selected {
+    background: #007bff !important;
+    color: #fff !important;
+    border-radius: 50%;
+}
+/* Time slots */
+#time-slots button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#time-slots button:hover {
+    background-color: #0056b3;
+}
+#time-slots button.active {
+    background-color: #28a745;
+}
+/* Modal overlay */
+#booking-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+/* Modal */
+#booking-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+.flatpickr-calendar.inline{
+    margin-bottom: 10px;
+}
+#clinic-calendar {
+    display: flex;
+}
+.flatpickr-day.selected {
+    background: #007bff !important;
+    color: #fff !important;
+    border-radius: 50%;
+}
+
+
+@media (max-width: 768px) {
+    #clinic-calendar {
+        display: block;
+    }
+    .flatpickr-calendar {
+        width: 100% !important;
+    }
+}
